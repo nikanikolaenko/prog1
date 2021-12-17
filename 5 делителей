@@ -1,0 +1,30 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+
+namespace SoloLearn
+{
+	class Program
+	{
+		static void Main(string[] args)
+		{ for (int i=1;i<300;i++)
+                if (x(i)==5)
+                    Console.Write(i+" ");
+            Console.ReadKey();
+        }
+
+        static int x(int i)
+        {
+            int spam=0;
+
+            for (int a=1;a<i;a++)
+                if (i%a==0)
+                    spam++;//spam++-в начале считывается spam, а потом увеличивается на 1
+            return spam;
+
+		}
+	}
+}
