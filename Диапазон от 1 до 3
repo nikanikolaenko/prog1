@@ -1,0 +1,27 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+
+namespace SoloLearn
+{
+	class Program
+	{
+		static void Main(string[] args)
+		{var hen = new double[3];//double-число с плавающей точкой
+
+for(int i = 0; i < hen.Length; i++)//i++-прибавление к переменной на 1, Length-массив
+
+    hen[i] = double.Parse(Console.ReadLine());//parse-Преобразует строковое представление числа в эквивалентное ему 32-битовое целое число со знаком
+
+var z = hen.Where(x => x > 1 && x < 3);
+
+Console.WriteLine(string.Join(", ", z));
+
+Console.ReadLine();
+
+		}
+	}
+}
