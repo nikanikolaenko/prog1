@@ -1,0 +1,32 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+
+namespace SoloLearn
+{
+	class Program
+	{
+		static void Main(string[] args)
+		{for (int i=120;i<140+1;i++)
+            {
+                Console.WriteLine($"{i}\t{spam(i)}");
+
+            }
+        }
+
+         static int spam(int x)
+        {
+            int def=0;
+            for (int i = 1; i <= x; i++)
+            {
+                if (x%i==0)
+                    def++;
+            }
+
+            return def;
+        }
+    }
+}
