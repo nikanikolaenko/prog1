@@ -1,0 +1,29 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+
+namespace SoloLearn
+{
+	class Program
+	{
+		static void Main(string[] args)
+		{Console.WriteLine(subbota(Console.ReadLine()));
+        }
+
+        private static string subbota(string ser)
+        {
+            ser = ser[0].ToString().ToUpper() + ser.Substring(1, ser.Length-1);
+            for (int i = 1; i < ser.Length; i++)
+            {
+                if (ser[i - 1] == ' ')
+                    ser = ser.Substring(0, i) + ser[i].ToString().ToUpper() + ser.Substring(i + 1, ser.Length - i - 1);
+            }
+
+            return ser;
+
+		}
+	}
+}
