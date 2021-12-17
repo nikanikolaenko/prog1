@@ -1,0 +1,37 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+
+namespace SoloLearn
+{
+	class Program
+	{
+		static void Main(string[] args)
+		{Console.WriteLine("Enter a number ");
+
+    int x=Convert.ToInt32(Console.ReadLine());
+    int d=3;
+    int z=5;   
+        {
+           if (x>1000)
+           {
+           Console.WriteLine(x-(z*x/100));
+           }
+           else if (x>500)
+           {
+           Console.WriteLine(x-(d*x/100));
+           }
+           else
+           {
+           Console.WriteLine(x);
+           }
+        }
+
+        Console.ReadKey();
+
+		}
+	}
+}
