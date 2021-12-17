@@ -1,0 +1,27 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+
+namespace SoloLearn
+{
+	class Program
+	{
+		static void Main(string[] args)
+		{
+        {    int i,x,n;
+            n = Convert.ToInt16(Console.ReadLine());
+            x = 0;
+            for(i=1;i<=n;i++)
+            {
+                x = x+i;
+                System.Console.WriteLine(x);      
+            }
+            Console.ReadLine();
+        }
+
+		}
+	}
+}
