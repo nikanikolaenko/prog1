@@ -1,0 +1,31 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+
+namespace SoloLearn
+{
+	class Program
+	{
+		static void Main(string[] args)
+		{int n = int.Parse(Console.ReadLine());
+   int i;
+   int fredi;
+   string prim;
+   for (i=1; i<=n; i++)
+   {
+      prim=null;
+      for (fredi=1; fredi<=n; fredi++)
+      {
+         if (i%fredi==0)
+         {
+            prim+="+";
+         }
+      }
+      Console.WriteLine(i+prim);
+   }
+		}
+	}
+}
