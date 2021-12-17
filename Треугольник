@@ -1,0 +1,31 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+
+namespace SoloLearn
+{
+	class Program
+	{
+		static void Main(string[] args)
+		{
+            int x=Convert.ToInt32(Console.ReadLine());
+char pathChar='*';
+char entireChar=' ';
+for(int i=0;i<x;i++)
+{
+    for(int j=0;j<=i;j++)
+    {
+        if(i!=x-1)
+            Console.Write(j==0 || j==i?pathChar:entireChar); // ?-результат одного из двух выражений
+        else
+            break;
+    }
+    Console.WriteLine(i==x-1?new string(pathChar,x):"");
+}
+
+		}
+	}
+}
