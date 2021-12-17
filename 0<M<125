@@ -1,0 +1,21 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+
+namespace SoloLearn
+{
+	class Program
+	{
+		static void Main(string[] args)
+		{ Random smell = new Random();
+            var uno = new int[100];
+            for (int i = 0; i < uno.Length; i++)
+                uno[i] = smell.Next(-1000, 1000);
+
+            Console.WriteLine(uno.Count(i => 0 < i && i < 125));
+		}
+	}
+}
