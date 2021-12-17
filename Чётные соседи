@@ -1,0 +1,31 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+
+namespace SoloLearn
+{
+	class Program
+	{
+		static void Main(string[] args)
+		{ string plov=" ";
+            plov=Console.ReadLine();
+            var hit=Array.ConvertAll(plov.Split(' '), s => int.Parse(s));
+            int Length_hit = hit.Length;
+            int sum = 0;
+
+            for (int i = 1; i < Length_hit - 1; i++)
+            {
+                if (hit[i - 1]%2==0 && hit[i + 1]%2==0)
+                {
+                    sum++;
+                }
+            }
+
+            Console.WriteLine(sum);
+            Console.ReadLine();
+		}
+	}
+}
