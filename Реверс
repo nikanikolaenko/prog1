@@ -1,0 +1,22 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+
+namespace SoloLearn
+{
+	class Program
+	{
+		static void Main(string[] args)
+		{ string a="";
+            a = Console.ReadLine();
+            char[] aReverse = a.ToCharArray();//array-изменение порядка букв в обратном порядке
+            Array.Reverse(aReverse);//Array.Reverse-изменяет порядок элементов в одномерном массиве Array или в части массива Array на обратный.
+            a = new string(aReverse);
+            Console.WriteLine(a);
+            Console.ReadLine();
+		}
+	}
+}
